@@ -10,7 +10,7 @@ For this powerup we'll use conda.
 
 # Conda for R
 
-An **Enviroment** contains all the software packages you need for a project each enviroment has a name, and you will need to install all the packages you need once for each enviroment. Enviroments are normally created, activated, and deactivated on the command line. 
+An **Environment** contains all the software packages you need for a project each environment has a name, and you will need to install all the packages you need once for each environment. Environments are normally created, activated, and deactivated on the command line. 
 
 ## Creating an Environment
 
@@ -32,7 +32,7 @@ conda activate myenv
 ```
 4) Install packages
 
-One an enviroment is activated you can install software into it. Install r and r-studio with
+One an environment is activated you can install software into it. Install r and r-studio with
 
 ```
 conda install conda-forge::r-base
@@ -47,7 +47,7 @@ rstudio
 
 rstudio should now be using the most recent version of R. 
 
-## Creating an enviroment with an older version of R
+## Creating an environment with an older version of R
 
 Lets create another environment with R version 3.6.1
 
@@ -68,7 +68,7 @@ conda install rstudio
 
 
 this is normal conda syntax for installing a package with a different version.
-``` conda installl package==version ```
+``` conda install package==version ```
 
 your rstudio should now be running with R version 3.6.1
 
@@ -100,7 +100,7 @@ or with rstudio
 
 # Troubleshooting
 
-* Enviroments rely on software being isolated from software in other enviroments in R this is done by setting the .libpath to make sure this works try running R in the terminal
+* Environments rely on software being isolated from software in other environments in R this is done by setting the .libpath to make sure this works try running R in the terminal
 
 ```R
 R
@@ -132,4 +132,4 @@ Type 'q()' to quit R.
 "/opt/anaconda3/envs/r3_6/lib/R/library"
 ```
 
-if your libpath has more than one directory, or does not point to  ```.../<enviroment_name>/lib/R/libarary``` you may be setting the variable somewhere else, this might happen if you've used renv in the past or are setting it in a .Rprofile file in your directory. You'll need to remove those to get conda working.
+if your libpath has more than one directory, or does not point to  ```.../<environment_name>/lib/R/library``` you may be setting the variable somewhere else, this might happen if you've used renv in the past or are setting it in a .Rprofile file in your directory. You'll need to remove those to get conda working.
