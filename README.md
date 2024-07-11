@@ -4,7 +4,7 @@ Package managers in R help when working on different projects that may require p
 
 * [renv](https://rstudio.github.io/renv/articles/renv.html) - This is a package that works within R to create project folders that have metadata to recreate and share the environment. Its main drawback is that it does not easily let you handle different versions of R itself, and it can be tricky (speaking for Jake) to get working in RStudio. 
 
-* [conda](https://docs.anaconda.com/working-with-conda/packages/using-r-language/) - this is a very popular package manger used for python, however, also it has support for R packages. It can be used to track different versions of R, but requires a little more work on the command line.
+* [conda](https://docs.anaconda.com/working-with-conda/packages/using-r-language/) - this is a very popular package manger used for python, however, also it has support for R packages. It can be used to track different versions of R, but requires a little more work on the command line. It's main drawback is that it's R versions and R-Studio versions are often out dated, though newer versions are aviable on the conda-forge channels.
 
 For this powerup we'll use conda.
 
